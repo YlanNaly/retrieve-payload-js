@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "startdev":"node app.js",
+    "startdev": "node app.js",
     "start": "node dist/index.js && npm run serve-static",
     "serve-static": "cd static-website && npx serve",
     "build": "webpack --config webpack.config.js"
