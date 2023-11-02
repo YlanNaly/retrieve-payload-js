@@ -2,25 +2,18 @@
   "name": "express-retrieve",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "startdev": "node app.js",
-    "start": "node dist/index.js && npm run serve-static",
-    "serve-static": "cd static-website && npx serve",
-    "build": "webpack --config webpack.config.js"
+    "dev": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@cyclic.sh/s3fs": "^1.2.9",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "winston": "^3.11.0"
-  },
-  "devDependencies": {
-    "serve": "^14.2.1",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
   }
 }
